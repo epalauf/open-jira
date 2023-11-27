@@ -31,7 +31,7 @@ export const EntryList: FC<Props> = ({ status }) => {
         // alternativa
         // if(!entry) { return }
         entry.status = status;
-        updateEntry(entry);
+        updateEntry(entry, false);
         endDragging();
     }
 
